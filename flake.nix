@@ -24,10 +24,8 @@
         (fe_pkgs.default.withComponents [
           "cargo"
           "clippy"
-          "rust-src"
           "rustc"
           "rustfmt"
-          "rust-analyzer"
         ])
       ] ++ librarys;
 
