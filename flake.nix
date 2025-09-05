@@ -21,8 +21,10 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
-        (fe_pkgs.default.withComponents [
+        (fe_pkgs.complete.withComponents [
           "cargo"
+          "rust-analyzer"
+          "rust-src"
           "clippy"
           "rustc"
           "rustfmt"
